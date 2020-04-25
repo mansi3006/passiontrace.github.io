@@ -1,0 +1,53 @@
+<html>
+<title>Passion Trace - About US</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+</style>
+<body>
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li class="w3-text-red"><a href="index.html"><b>HOME</b></a></li>
+	<li class="w3-text-red"><a href="walkthrough.html"><b>WALKTHROUGH</b></a></li>
+	<li class="w3-text-red"><a href="about.html"><b>ABOUT US</b></a></li>
+	<li class="w3-text-red"><a href="contact.html"><b>CONTACT US</b></a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-hover-white w3-red"><i class="fa fa-search"></i></a>
+    </li>
+  </ul>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-16 w3-hover-black">
+  <div class="w3-xlarge w3-padding-32">
+    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+     <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  </div>
+  
+</footer>
+<script>
+ // Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+</body>
+</html>
